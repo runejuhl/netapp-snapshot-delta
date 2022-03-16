@@ -1,0 +1,18 @@
+#+title: NetApp snapshot delta
+
+Quick and dirty script to list NetApp snapshot delta sizes.
+* Usage
+#+begin_src fundamental
+$ ./netapp-snapshot-delta.sh admin@some.netapp prod monthly.2022-03-01_0000 hourly.2022-03-16_0605
+Comparing volume snapshot deltas on 'prod' between snapshots 'monthly.2022-03-01_0000' and 'hourly.2022-03-16_0605'
+
+799GB prod something
+539GB prod something_else
+144GB prod backup
+110GB prod old_files
+49GB prod old_files_2
+32GB prod home
+30GB prod someone_needs_to_sort_this
+26GB prod log
+14GB prod karens_files
+#+end_src
